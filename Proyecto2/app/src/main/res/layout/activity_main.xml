@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="16dp"
+  android:background="#121212"
+  android:layout_marginTop="20pt">
+
+  <!-- Barra superior con Título y Botón Conectar -->
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:text="Tacómetro Wi-Fi"
+      android:textColor="#FFFFFF"
+      android:textSize="22sp"
+      android:fontFamily="sans-serif-medium" />
+
+    <Button
+      android:id="@+id/btnConectar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:text="Conectar"
+      android:backgroundTint="#00FFCC"
+      android:textColor="#121212" />
+  </RelativeLayout>
+
+  <!-- Indicador numérico principal de RPM -->
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="32dp">
+
+    <TextView
+      android:id="@+id/tvRpm"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="0"
+      android:textColor="#00FFCC"
+      android:textSize="64sp"
+      android:fontFamily="sans-serif-condensed-light" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" RPM"
+      android:textColor="#888888"
+      android:textSize="20sp"
+      android:layout_gravity="bottom"
+      android:layout_marginBottom="12dp" />
+  </LinearLayout>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Gráfica en Tiempo Real (Auto-Escala)"
+    android:textColor="#888888"
+    android:textSize="14sp"
+    android:layout_marginBottom="8dp" />
+
+  <!-- Lienzo personalizado de la gráfica -->
+  <com.example.proyecto2.GraficaView
+    android:id="@+id/graficaView"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#1E1E1E" />
+
+</LinearLayout>

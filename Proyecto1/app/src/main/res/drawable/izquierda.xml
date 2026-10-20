@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="100dp"
+  android:height="100dp"
+  android:viewportWidth="24"
+  android:viewportHeight="24">
+  <!-- Fondo redondeado suave -->
+  <path
+    android:fillColor="#E0F2F1"
+    android:pathData="M3,5 C3,3.9 3.9,3 5,3 L19,3 C20.1,3 21,3.9 21,5 L21,19 C21,20.1 20.1,21 19,21 L5,21 C3.9,21 3,20.1 3,19 Z" />
+  <!-- Flecha hacia la izquierda -->
+  <path
+    android:fillColor="#26A69A"
+    android:pathData="M6,12 L15,4 L15,9 L19,9 L19,15 L15,15 L15,20 Z" />
+</vector>
